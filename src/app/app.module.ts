@@ -14,13 +14,18 @@ import {MatMenuModule} from "@angular/material/menu";
 import {MatSidenavModule} from "@angular/material/sidenav";
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {MatListModule} from "@angular/material/list";
+import { AutenticacionComponent } from './autenticacion/autenticacion.component';
+import {AmplifyAuthenticatorModule} from "@aws-amplify/ui-angular";
+import { MarketplaceComponent } from './marketplace/marketplace.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductosComponent,
     ServiciosComponent,
-    InmueblesComponent
+    InmueblesComponent,
+    AutenticacionComponent,
+    MarketplaceComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +37,8 @@ import {MatListModule} from "@angular/material/list";
     MatMenuModule,
     MatSidenavModule,
     FontAwesomeModule,
-    MatListModule
+    MatListModule,
+    AmplifyAuthenticatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
